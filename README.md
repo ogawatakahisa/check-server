@@ -30,7 +30,7 @@
 
 ## リポジトリのクローン
 ```bash
-git clone https://github.com/ogawatakahisa/server1.git
+git clone https://github.com/ogawatakahisa/todo-server-sec.git
 ```
 
 
