@@ -28,19 +28,15 @@ app.get("/allTodos/:date", async (req: Request, res: Response): Promise<void> =>
     try {
         const userId = req.body.user?.sub;
         const dateParam = req.params.date; // `YYYY-MM-DD` 形式で受け取る
-        console.log("Received Date Param:", dateParam);
-        console.log("Received User ID:", userId);
 
         // `date` が startDate 以上かつ endDate 以下のものを取得
         const allTodos = await prisma.todo.findMany({
             where: {
                 userId,
-
                 date: dateParam,
             },
         });
 
-        console.log("Found Todos:", allTodos);
         res.json(allTodos);
     } catch (error) {
         console.error("Error fetching todos:", error);
