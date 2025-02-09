@@ -70,4 +70,3 @@ http://localhost:8080で動作します。
 ## 関連リポジトリ
 
 ・フロントエンドリポジトリ：[todo-client-sec)](https://github.com/ogawatakahisa/todo-client-sec.git)
-# server-todo
